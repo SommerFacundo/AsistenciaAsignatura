@@ -113,7 +113,11 @@ html{
 
 }
 .students::-webkit-scrollbar{
-    width: 3px;
+    width: 6px;
+    transition: 1s;
+}
+.students::-webkit-scrollbar:hover{
+    width: 8px;
 }
 .students::-webkit-scrollbar-thumb {
     background-color: var(--colorPrimario); /* Color del scrollbar */
@@ -136,6 +140,9 @@ html{
     transition: 1s;
     width: 7.5rem;
     overflow: hidden;
+}
+.btnPresencia:hover{
+    cursor: pointer;
 }
 .btnPresente{
     display: flex;
@@ -197,4 +204,13 @@ html{
 
 .containerSearchNav > input:focus{
     outline: none;
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        height:100%;
+    }
+    .students{
+        height: 40rem;
+    }
 }
